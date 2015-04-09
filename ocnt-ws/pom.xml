@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
 		<relativePath>../ocnt-parent/pom.xml</relativePath>
     </parent>
-    <artifactId>ocnt-client</artifactId>
-    <packaging>war</packaging>
-    <name>OCNT Web App</name>
+    <artifactId>ocnt-ws</artifactId>
+    <packaging>jar</packaging>
+    <name>OCNT WEB SERVICE</name>
 </project>

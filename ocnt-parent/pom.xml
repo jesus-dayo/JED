@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.dhl.wcc</groupId>
-	<artifactId>wcc-parent</artifactId>
+	<groupId>com.dhl.ocnt</groupId>
+	<artifactId>ocnt-parent</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<name>WCC Maven Webapp</name>
+	<name>OCNT Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	
 	<properties>
@@ -29,55 +29,20 @@
 	<dependencyManagement>
 	<dependencies>
 		<dependency>
-				<groupId>com.dhl.wcc</groupId>
-				<artifactId>wcc-beans</artifactId>
+				<groupId>com.dhl.ocnt</groupId>
+				<artifactId>ocnt-ws</artifactId>
 				<version>${project.version}</version>
-		</dependency>
-		<dependency>
-				<groupId>com.dhl.wcc</groupId>
-				<artifactId>wcc-webservice</artifactId>
-				<version>${project.version}</version>
-		</dependency>
-		<dependency>
-				<groupId>com.dhl.wcc</groupId>
-				<artifactId>wcc-dao</artifactId>
-				<version>${project.version}</version>
-		</dependency>
-		<dependency>
-				<groupId>com.dhl.wcc</groupId>
-				<artifactId>wcc-service</artifactId>
-				<version>${project.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.mockito</groupId>
-			<artifactId>mockito-all</artifactId>
-			<version>${org.mockito.version}</version>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
 		</dependency>
 	</dependencies>
 	</dependencyManagement>
 	
 	<modules>
-		<module>../wcc-beans</module>
-        <module>../wcc-dao</module>
-		<module>../wcc-service</module>
-		<module>../wcc-webservice</module>
-        <module>../wcc-client</module>
+		<module>../ocnt-ws</module>
+        <module>../ocnt-client</module>
     </modules>
 	
 	<build>
-		<finalName>WCC</finalName>
+		<finalName>OCNT</finalName>
 		<pluginManagement>
 		<plugins>
 			<plugin>
